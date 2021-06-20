@@ -1,0 +1,34 @@
+@import '@assets/styles/color.module.scss';
+
+@mixin common {
+  font-weight: normal;
+
+  &.body_white {
+    color: $primary-white;
+  }
+  &.body_dark {
+    color: $primary-onyx;
+  }
+  &.body_gray {
+    color: $neutral-dark-gray;
+  }
+  &.body_center {
+    text-align: center;
+  }
+  &.body_left {
+    text-align: left;
+  }
+  &.body_right {
+    text-align: right;
+  }
+}
+
+.body_large {
+  @include common;
+  font-size: 18px;
+}
+
+.body_medium {
+  @include common;
+  font-size: 16px;
+}

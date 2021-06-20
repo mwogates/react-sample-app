@@ -1,0 +1,11 @@
+@import '@assets/styles/color.module.scss';
+@import '@assets/styles/spacing.module.scss';
+
+.header {
+  background-color: $primary-red;
+  padding: $spacing-s2;
+}
+
+.header__Title {
+  margin: 0;
+}
