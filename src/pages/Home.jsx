@@ -49,7 +49,7 @@ function Home() {
   useEffect(() => {
     searchUsers(keyword, currentPage, sortOption);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentPage, keyword, sortOption]);
+  }, []);
 
   const searchByKeyword = () => {
     setCurrentPage(1);
