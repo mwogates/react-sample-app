@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import '@assets/styles/app.scss';
 
@@ -11,7 +11,7 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>React Sample App</title>
       </Helmet>
@@ -20,7 +20,7 @@ function App() {
           <Layout exact path="/" component={Home} />
         </Switch>
       </Router>
-    </>
+    </HelmetProvider>
   );
 }
 

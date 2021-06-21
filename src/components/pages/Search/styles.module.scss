@@ -1,0 +1,26 @@
+@import '@assets/styles/color.module.scss';
+@import '@assets/styles/spacing.module.scss';
+
+.search {
+  padding-top: $spacing-s4;
+  padding-bottom: $spacing-s4;
+}
+
+.search__Titie {
+  margin: $spacing-s2 0;
+}
+
+.search__Form {
+  display: flex;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  
+  input {
+    border: none;
+  }
+  button {
+    text-transform: uppercase;
+  }
+}

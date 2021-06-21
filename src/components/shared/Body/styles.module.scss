@@ -1,4 +1,5 @@
 @import '@assets/styles/color.module.scss';
+@import '@assets/styles/screenSize.module.scss';
 
 @mixin common {
   font-weight: normal;
@@ -26,9 +27,17 @@
 .body_large {
   @include common;
   font-size: 18px;
+
+  @include sm {
+    font-size: 22px;
+  }
 }
 
 .body_medium {
   @include common;
   font-size: 16px;
+
+  @include sm {
+    font-size: 18px;
+  }
 }

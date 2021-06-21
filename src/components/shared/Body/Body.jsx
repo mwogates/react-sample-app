@@ -1,11 +1,10 @@
 import React from 'react';
-import style from './styles.module.scss';
 import classNames from 'classnames';
+import style from './styles.module.scss';
 
 export default function Body({
   size = 'medium',
   colorName = 'white',
-  color,
   align = 'left',
   children,
   ...props
@@ -14,10 +13,7 @@ export default function Body({
     'p',
     {
       ...props,
-      style: {
-        color,
-        ...props.style,
-      },
+      style: { ...props.style },
       className: classNames(
         props.className,
         style[`body_${align}`],

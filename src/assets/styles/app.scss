@@ -1,5 +1,6 @@
 @import '@assets/styles/color.module.scss';
 @import '@assets/styles/spacing.module.scss';
+@import '@assets/styles/screenSize.module.scss';
 
 html,
 body {
@@ -17,4 +18,32 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+
+  @include sm {
+    max-width: 540px;
+  }
+
+  @include md {
+    max-width: 720px;
+  }
+
+  @include lg {
+    max-width: 960px;
+  }
+
+  @include xl {
+    max-width: 1140;
+  }
+
+  @include xxl {
+    max-width: 1320px;
+  }
 }

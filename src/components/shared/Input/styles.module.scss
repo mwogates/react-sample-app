@@ -1,0 +1,14 @@
+@import '@assets/styles/color.module.scss';
+@import '@assets/styles/spacing.module.scss';
+
+.input_Field {
+  border: 1px solid $neutral-warm-gray;
+  border-radius: 0;
+  width: 100%;
+  padding: $spacing-s1 $spacing-s2;
+  height: 48px;
+  font-size: 16px;
+  color: $primary-onyx;
+  box-sizing: border-box;
+  outline: none;
+}

@@ -5,7 +5,6 @@ import classNames from 'classnames';
 export default function Headline({
   variant = 'h1',
   align = 'left',
-  color,
   colorName = 'dark',
   children,
   ...props
@@ -14,7 +13,7 @@ export default function Headline({
     variant,
     {
       ...props,
-      style: { color, ...props.style },
+      style: { ...props.style },
       className: classNames(
         props.className,
         style[`headline_${variant}`],

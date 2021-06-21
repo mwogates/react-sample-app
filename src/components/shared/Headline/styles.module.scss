@@ -1,4 +1,5 @@
 @import '@assets/styles/color.module.scss';
+@import '@assets/styles/screenSize.module.scss';
 
 @mixin common {
   font-weight: normal;
@@ -8,6 +9,9 @@
   }
   &.headline_dark {
     color: $primary-onyx;
+  }
+  &.headline_red {
+    color: $primary-red;
   }
   &.headline_left {
     text-align: left;
@@ -23,29 +27,53 @@
 .headline_h1 {
   @include common;
   font-size: 48px;
+
+  @include sm {
+    font-size: 76px;
+  }
 }
 
 .headline_h2 {
   @include common;
   font-size: 36px;
+
+  @include sm {
+    font-size: 44px;
+  }
 }
 
 .headline_h3 {
   @include common;
   font-size: 26px;
+
+  @include sm {
+    font-size: 32px;
+  }
 }
 
 .headline_h4 {
   @include common;
   font-size: 24px;
+
+  @include sm {
+    font-size: 30px;
+  }
 }
 
 .headline_h5 {
   @include common;
   font-size: 22px;
+
+  @include sm {
+    font-size: 26px;
+  }
 }
 
 .headline_h6 {
   @include common;
   font-size: 18px;
+
+  @include sm {
+    font-size: 24px;
+  }
 }

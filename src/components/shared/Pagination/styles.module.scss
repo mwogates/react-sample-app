@@ -1,0 +1,32 @@
+@import '@assets/styles/color.module.scss';
+@import '@assets/styles/spacing.module.scss';
+@import '@assets/styles/screenSize.module.scss';
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  @include sm {
+    gap: 20px;
+  }
+}
+
+.pagination__Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $spacing-s1;
+  font-weight: bold;
+  color: $primary-white;
+  background-color: $primary-red;
+  border-radius: 4px;
+  cursor: pointer;
+  @include sm {
+    padding: $spacing-s2 $spacing-s3;
+  }
+}
+
+.pagination__Button_Disabled {
+  opacity: 0.7;
+  color: $primary-white;
+  background-color: $primary-red;
+}

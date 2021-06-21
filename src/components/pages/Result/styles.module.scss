@@ -1,0 +1,80 @@
+@import '@assets/styles/color.module.scss';
+@import '@assets/styles/spacing.module.scss';
+@import '@assets/styles/screenSize.module.scss';
+
+.result {
+  padding-bottom: $spacing-s8;
+}
+
+.result__Sort {
+  padding-bottom: $spacing-s2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.result__Titie {
+  margin: $spacing-s2 0;
+}
+
+.result__TableContainer {
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.result__Table {
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  td {
+    width: 30%;
+    padding: $spacing-s1;
+    text-align: center;
+    line-height: normal;
+
+    @include sm {
+      padding: $spacing-s2;
+    }
+  }
+}
+
+.result__Table__Head {
+  tr {
+    background-color: $primary-red;
+    color: $primary-white;
+    td {
+      padding: $spacing-s2;
+      text-transform: uppercase;
+
+      @include sm {
+        padding: $spacing-s3;
+      }
+    }
+  }
+}
+
+.result__Table__Body {
+  tr {
+    border-bottom: 1px solid $neutral-light-gray;
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+
+      @include sm {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  tr:hover {
+    background-color: $neutral-light-gray;
+  }
+}
+
+.result__Pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: $spacing-s2;
+}

@@ -1,0 +1,45 @@
+@import '@assets/styles/color.module.scss';
+@import '@assets/styles/spacing.module.scss';
+
+.button {
+  padding: $spacing-s1 $spacing-s2;
+  background-color: $primary-red;
+  color: $primary-white;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.29px;
+  text-align: center;
+  width: $spacing-s25;
+  height: $spacing-s6;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  &:active {
+    border: 0;
+  }
+
+  &-primary {
+    @extend .button;
+    background-color: $primary-red;
+    color: $primary-white;
+  }
+
+  &-secondary {
+    @extend .button;
+    color: $primary-red;
+    background-color: $primary-white;
+  }
+
+  &-disabled {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}

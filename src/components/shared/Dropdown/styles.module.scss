@@ -1,0 +1,28 @@
+@import '@assets/styles/color.module.scss';
+@import '@assets/styles/spacing.module.scss';
+@import '@assets/styles/screenSize.module.scss';
+
+.dropdown_Container {
+  height: 48px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px !important;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+  @include sm {
+    width: 220px;
+  }
+
+  > div {
+    height: 100%;
+    > div {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid $neutral-light-gray !important;
+      box-shadow: none !important;
+    }
+  }
+}
