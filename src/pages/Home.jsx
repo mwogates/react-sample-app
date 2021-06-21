@@ -9,7 +9,7 @@ const apiURL = 'https://api.github.com/search/users';
 function Home() {
   const [keyword, setKeyword] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const [sortOption, setSortOption] = useState(1);
+  const [sortOption, setSortOption] = useState('');
   const [loading, setLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [users, setUsers] = useState([]);
@@ -47,8 +47,9 @@ function Home() {
   };
 
   useEffect(() => {
-    searchUsers(keyword, currentPage);
-  }, []);
+    searchUsers(keyword, currentPage, sortOption);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentPage, keyword, sortOption]);
 
   const searchByKeyword = () => {
     setCurrentPage(1);
